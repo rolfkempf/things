@@ -1,21 +1,113 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="text-center pt-4">
+    <h1 class="text-4xl">Things</h1>
+    <small>Keep track of your stuff – return your friends´ stuff on time</small>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<div class="cta mt-4 mb-20 flex">
+    <button class="button mx-auto">Add Something</button>
+</div>
+
+<div class="flex">
+    <div class="w-1/2 px-2">
+        <h2
+            class="text-lg font-light text-gray-700 uppercase text-center border-b border-gray-700"
+        >
+            Your Stuff
+        </h2>
+        <div>
+            <a class="list-item" href="#">
+                <img
+                    class="w-1/4 rounded-full p-2"
+                    src="https://picsum.photos/id/693/100/100"
+                    alt="Photo of a Shiba Inu"
+                />
+                <div class="w-3/4 px-4 flex flex-col justify-center" href="#">
+                    <div class="font-light text-sm">Breath of Fire 1</div>
+                    <div>
+                        <span class="pill bg-blue-100">Jochen Böhm</span>
+                        <span class="pill bg-green-100"> 20.04.2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item" href="#">
+                <img
+                    class="w-1/4 rounded-full p-2"
+                    src="https://picsum.photos/id/691/100/100"
+                    alt="Photo of a Shiba Inu"
+                />
+                <div class="w-3/4 px-4 flex flex-col justify-center" href="#">
+                    <div class="font-light text-sm">AD&D Regelbuch</div>
+                    <div>
+                        <span class="pill bg-blue-100">Oliver Thamerus</span>
+                        <span class="pill bg-green-100"> 20.04.1999</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item" href="#">
+                <img
+                    class="w-1/4 rounded-full p-2"
+                    src="https://picsum.photos/id/785/100/100"
+                    alt="Photo of a Shiba Inu"
+                />
+                <div class="w-3/4 px-4 flex flex-col justify-center" href="#">
+                    <div class="font-light text-sm">Squire Jazz-Bass</div>
+                    <div>
+                        <span class="pill bg-blue-100">Moni Mang</span>
+                        <span class="pill bg-green-100"> 02.08.2017</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="w-1/2">
+        <h2
+            class="text-lg font-light text-gray-700 uppercase text-center border-b border-gray-700"
+        >
+            Their Stuff
+        </h2>
+        <div>
+            <a class="list-item" href="#">
+                <img
+                    class="w-1/4 rounded-full p-2"
+                    src="https://picsum.photos/id/613/100/100"
+                    alt="Photo of a Shiba Inu"
+                />
+                <div class="w-3/4 px-4 flex flex-col justify-center" href="#">
+                    <div class="font-light text-sm">Breath of Fire 1</div>
+                    <div>
+                        <span class="pill bg-blue-100">Jochen Böhm</span>
+                        <span class="pill bg-green-100"> 20.04.2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item" href="#">
+                <img
+                    class="w-1/4 rounded-full p-2"
+                    src="https://picsum.photos/id/191/100/100"
+                    alt="Photo of a Shiba Inu"
+                />
+                <div class="w-3/4 px-4 flex flex-col justify-center" href="#">
+                    <div class="font-light text-sm">AD&D Regelbuch</div>
+                    <div>
+                        <span class="pill bg-blue-100">Oliver Thamerus</span>
+                        <span class="pill bg-green-100"> 20.04.1999</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item" href="#">
+                <img
+                    class="w-1/4 rounded-full p-2"
+                    src="https://picsum.photos/id/635/100/100"
+                    alt="Photo of a Shiba Inu"
+                />
+                <div class="w-3/4 px-4 flex flex-col justify-center" href="#">
+                    <div class="font-light text-sm">Squire Jazz-Bass</div>
+                    <div>
+                        <span class="pill bg-blue-100">Moni Mang</span>
+                        <span class="pill bg-green-100"> 02.08.2017</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
